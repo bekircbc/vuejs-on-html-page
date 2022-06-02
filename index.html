@@ -93,7 +93,7 @@
       <div class="nouns">
         <div
           class="noun"
-          :class="{choice: choice === noun.article}"
+          :class="choice === noun.article?choice:null"
           v-for="noun in nouns"
         >
           <span v-if="choice === noun.article">{{noun.article}}</span>
